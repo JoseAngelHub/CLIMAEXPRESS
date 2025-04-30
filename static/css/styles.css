@@ -1,0 +1,145 @@
+/*Colores para la aplicacion cuando se ejecute*/
+:root {
+    --titulo: #3B5998;
+    --azul: #3B5998;
+    --gris: #b3bbc4;
+    --texto: #000000;
+    --sombra: #3d3d3d;
+}
+
+/*Colores para el modo oscuro*/
+.dark {
+    --titulo: #a1aece;
+    --azul: #151d33;
+    --gris: #535963;
+    --texto: #ffffff;
+    --sombra: #0d121f;
+}
+
+div{
+    color: var(--texto);
+}
+
+/*El fondo*/
+body {
+    background-color: var(--azul);
+}
+
+/*El titutlo*/
+h1 {
+    color: var(--titulo);
+    font-size: 2rem;
+    padding-left: 50px;
+}
+
+/*Contanedor principal*/
+.container {
+    background-color: var(--gris);
+    border-radius: 8px;
+    padding: 40px;
+    max-width: 600px;
+}
+
+/*El input*/
+#cityInput {
+    border: 1px solid #5D789D;
+    padding: 10px 20px;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+/*Boton primario*/
+.btn-primary {
+    background-color: var(--azul);
+    border-color: var(--azul);
+    color: white;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+/*Boton primario para que cambie cuando pases por encima*/
+.btn-primary:hover {
+    background-color: #2E4372;
+    border-color: #2E4372;
+}
+
+/*Desplegable de las ciudades populares*/
+#cityDropdown {
+    background-color: var(--azul);
+    color: #ffffff;
+    border: 1px solid #000000;
+    border-radius: 30px;
+    padding: 10px 20px;
+    width: 100%;
+}
+
+/*Tarjeta principal*/
+.card {
+    box-shadow: 5px 5px 2px var(--sombra);
+    padding-left: 5%;
+    padding-right: 5%;
+
+    /*Tarjeta header*/
+    .card-header {
+        background-color: transparent;
+        border-bottom: none;
+    }
+}
+
+/*Hcer el checkBox invisible*/
+.invisible {
+    visibility: hidden;
+}
+
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 35px;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    background-color: #3B5998;
+    width: 55px;
+    height: 30px;
+    -webkit-transition: .4s;
+    transition: .4s;
+    top: -5px;
+}
+
+/*Slider desactivado "circulo"*/
+.slider:before {
+    content: "🌞";
+    
+    width: 26px;
+    height: 26px;
+    left: 4px;
+    bottom: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .4s;
+    padding-top: 3px;
+}
+
+/*Slider activado*/
+input:checked+.slider {
+    background-color: #151d33;
+}
+
+/*Slider cuando se activa*/
+input:checked+.slider:before {
+    content: "🌚";
+    transform: translateX(26px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
