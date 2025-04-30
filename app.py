@@ -3,7 +3,7 @@ import requests
 
 app = Flask(__name__)
 
-API_KEY = "cd533305d93c4c2b1cc30062030a9e5e"
+API_KEY = "..."
 BASE_URL = "https://api.openweathermap.org/data/2.5/weather"
 
 #Obtener los datos del clima de ciudad o coordenadas
