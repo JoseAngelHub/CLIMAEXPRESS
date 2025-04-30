@@ -24,6 +24,6 @@ Este proyecto ha sido desarrollado en colaboración con:
 - [JoseAngelHub](https://github.com/JoseAngelHub)
 
 📄 Licencia
-Este proyecto está licenciado bajo la Licencia MIT - consulta el archivo LICENSE para más detalles.
+Este proyecto está licenciado bajo la **Licencia MIT** - consulta el archivo [LICENSE](LICENSE) para más detalles.
 
 🌍 ¡Gracias por usar la API del Clima Inteligente! 🌤️🚀
